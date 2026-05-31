@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mảnh ghép con người — Bản chất con người là tổng hòa các quan hệ xã hội</title>
+
+    <!-- Fonts: Playfair Display (serif) + Be Vietnam Pro (sans) — hỗ trợ tiếng Việt đầy đủ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- React + Babel (pinned) -->
+    <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+    <!-- Three.js r128 (UMD global THREE) + OrbitControls -->
+    <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+    <!-- Image slot (kéo-thả ảnh, lưu lại) -->
+    <script src="image-slot.js"></script>
+
+    <!-- Framer Motion (UMD global Motion) -->
+    <script src="https://unpkg.com/framer-motion@11.18.2/dist/framer-motion.js"></script>
+    <script>
+      // Framer Motion phát cảnh báo "unique key" giả từ bên trong (mọi motion.div),
+      // dù mọi danh sách của ta đều đã có key. Lọc đúng cảnh báo này để console sạch.
+      (function () {
+        var _err = console.error;
+        console.error = function () {
+          var first = arguments[0];
+          if (typeof first === "string" && first.indexOf("should have a unique") !== -1) return;
+          return _err.apply(console, arguments);
+        };
+      })();
+    </script>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#15160F",
+              ink2: "#1E2016",
+              ink3: "#262A1C",
+              cream: "#F2ECDF",
+              cream2: "#E7DDC9",
+              moss: "#8A9C66",
+              mossDeep: "#47542F",
+              terra: "#D07A3E",
+              terraDeep: "#A2511F",
+              gold: "#CBA45A",
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', "Georgia", "serif"],
+              sans: ['"Be Vietnam Pro"', "system-ui", "sans-serif"],
+              mono: ['"SFMono-Regular"', "ui-monospace", "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: #15160f;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      h1, h2, h3 {
+        text-wrap: balance;
+      }
+      p {
+        text-wrap: pretty;
+      }
+      ::selection {
+        background: #d07a3e;
+        color: #15160f;
+      }
+      /* Reveal khi cuộn tới */
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+          transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        will-change: opacity, transform;
+      }
+      .reveal-in {
+        opacity: 1;
+        transform: none;
+      }
+      /* Hero entrance */
+      @keyframes heroIn {
+        from {
+          opacity: 0;
+          transform: translateY(24px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      .hero-in {
+        opacity: 0;
+        animation: heroIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .reveal,
+        .hero-in {
+          opacity: 1 !important;
+          transform: none !important;
+          animation: none !important;
+        }
+      }
+      /* scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #15160f;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #3a3d2c;
+        border-radius: 6px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #4a4e38;
+      }
+      /* tránh nháy nội dung trước khi React mount */
+      #root:empty::after {
+        content: "";
+      }
+    </style>
+  </head>
+  <body class="font-sans text-cream">
+    <div id="root"></div>
+
+    <script type="text/babel" src="data.jsx"></script>
+    <script type="text/babel" src="ui.jsx"></script>
+    <script type="text/babel" src="puzzle3d.jsx"></script>
+    <script type="text/babel" src="sections.jsx"></script>
+    <script type="text/babel" src="app.jsx"></script>
+  </body>
+</html>
