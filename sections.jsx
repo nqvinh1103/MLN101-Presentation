@@ -432,7 +432,7 @@ function PiecesSection() {
         </Reveal>
         <Reveal variant="up" delay={0.05}>
           <h2 className="max-w-3xl font-serif text-3xl leading-tight sm:text-5xl">
-            Tám quan hệ xã hội tạo nên{" "}
+            Sáu quan hệ xã hội tạo nên{" "}
             <span className="text-terra">một con người</span>
           </h2>
         </Reveal>

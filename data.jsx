@@ -276,40 +276,6 @@ const PIECES = [
     pin: "Quan hệ xã hội mở rộng sang không gian số.",
     img: "ảnh mạng xã hội",
   },
-  {
-    n: "07",
-    title: "Kinh tế",
-    part: "Huyết mạch",
-    color: "#5E7A9E",
-    lead: "Quan hệ kinh tế là nền tảng vật chất quyết định ý thức và hành vi xã hội.",
-    listLabel: "Kinh tế hình thành:",
-    list: [
-      "Thói quen tiêu dùng",
-      "Tư duy về giá trị",
-      "Địa vị xã hội",
-      "Động lực lao động",
-    ],
-    note: "Người sinh ra trong gia đình nghèo và người sinh ra trong gia đình giàu có đều bị ảnh hưởng sâu sắc bởi quan hệ kinh tế ngay từ nhỏ — đây là nền tảng vật chất của đời sống tinh thần.",
-    pin: "Cơ sở vật chất quyết định đời sống tinh thần.",
-    img: "ảnh kinh tế",
-  },
-  {
-    n: "08",
-    title: "Chính trị – Pháp luật",
-    part: "Khung xương",
-    color: "#8E6B9E",
-    lead: "Thể chế chính trị và hệ thống pháp luật định hình quyền hạn và nghĩa vụ của mỗi cá nhân.",
-    listLabel: "Thể chế hình thành:",
-    list: [
-      "Ý thức quyền công dân",
-      "Tinh thần thượng tôn pháp luật",
-      "Tư duy dân chủ",
-      "Trách nhiệm xã hội",
-    ],
-    note: "Một người sinh ra dưới chế độ dân chủ và một người sinh ra dưới chế độ độc tài sẽ có thế giới quan và hành vi chính trị rất khác nhau.",
-    pin: "Thể chế xã hội đúc nên ý thức công dân.",
-    img: "ảnh thể chế",
-  },
 ];
 
 // VII · Tính lịch sử
