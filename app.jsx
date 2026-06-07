@@ -45,7 +45,7 @@ function SideNav() {
 
   return (
     <nav className="fixed right-5 top-1/2 z-40 hidden -translate-y-1/2 lg:block">
-      <ul className="flex flex-col gap-4">
+      <ul className="flex flex-col gap-3">
         {items.map(([id, label]) => {
           const on = active === id;
           return (
@@ -103,11 +103,15 @@ function App() {
       <SideNav />
       <main>
         <window.HeroSection />
-        <window.IntroSection />
-        <window.MarxSection />
+        <window.HistorySection />
+        <window.ComparisonSection />
+        <window.BioSocialSection />
+        <window.TotalitySection />
         <window.PiecesSection />
-        <window.EvidenceSection />
-        {/* <window.ActivitiesSection /> */}
+        <window.HistoricalNatureSection />
+        <window.AlienationSection />
+        <window.DigitalAgeSection />
+        <window.VietnamSection />
         <window.ConclusionSection />
       </main>
     </>
