@@ -26,7 +26,8 @@ const HISTORY = {
       color: "#8A9C66",
       title: "Con người là chủ thể lý tính thuần túy",
       text: "Descartes, Kant, Hegel đều coi bản chất con người nằm ở ý thức, lý trí hoặc tinh thần tuyệt đối — tách khỏi thế giới vật chất và hoạt động xã hội.",
-      critique: "Trừu tượng hóa con người, tách rời khỏi điều kiện sinh sống thực tế.",
+      critique:
+        "Trừu tượng hóa con người, tách rời khỏi điều kiện sinh sống thực tế.",
     },
     {
       n: "03",
@@ -34,7 +35,8 @@ const HISTORY = {
       color: "#A2511F",
       title: "Con người là sản phẩm của tự nhiên",
       text: "Feuerbach, Hobbes: bản chất con người do bản năng sinh vật quyết định. Con người tốt hay xấu là do 'thiên tính' bẩm sinh, không thể thay đổi.",
-      critique: "Đồng nhất con người với động vật, phủ nhận vai trò của lịch sử và xã hội.",
+      critique:
+        "Đồng nhất con người với động vật, phủ nhận vai trò của lịch sử và xã hội.",
     },
   ],
   turn: "Karl Marx đã vượt lên tất cả các quan niệm này bằng một luận điểm mang tính cách mạng...",
@@ -141,7 +143,7 @@ const BIOSOCIAL = {
 // V · Giải thích luận điểm
 const TOTALITY = {
   kicker: "V · Giải thích luận điểm",
-  title: "\"Tổng hòa\" — không phải phép cộng đơn giản",
+  title: '"Tổng hòa" — không phải phép cộng đơn giản',
   meaning:
     "'Tổng hòa' (ensemble) mà Marx dùng không có nghĩa là cộng các quan hệ lại như phép toán, mà là sự kết hợp hữu cơ, năng động — tạo ra chất mới vượt lên trên các thành phần.",
   points: [
@@ -323,7 +325,7 @@ const PRACTICAL_EVIDENCE = {
   kicker: "VIII · Dẫn chứng thực tiễn",
   title: "Dẫn chứng thực tiễn",
   intro:
-    "Để chứng minh cho quan điểm của Karl Marx rằng \"Bản chất con người là tổng hòa các quan hệ xã hội\", chúng ta có thể nhìn vào nhiều hiện tượng thực tiễn trong đời sống hiện nay.",
+    'Để chứng minh cho quan điểm của Karl Marx rằng "Bản chất con người là tổng hòa các quan hệ xã hội", chúng ta có thể nhìn vào nhiều hiện tượng thực tiễn trong đời sống hiện nay.',
   items: [
     {
       n: "1",
@@ -351,7 +353,7 @@ const PRACTICAL_EVIDENCE = {
       title: "Phong trào tình nguyện của sinh viên",
       paragraphs: [
         "Bên cạnh đó, các phong trào tình nguyện cũng là một minh chứng sinh động.",
-        "Những chương trình như \"Mùa hè xanh\", \"Tiếp sức mùa thi\", hiến máu nhân đạo hay các hoạt động bảo vệ môi trường không chỉ mang lại lợi ích cho cộng đồng mà còn giúp sinh viên rèn luyện bản thân.",
+        'Những chương trình như "Mùa hè xanh", "Tiếp sức mùa thi", hiến máu nhân đạo hay các hoạt động bảo vệ môi trường không chỉ mang lại lợi ích cho cộng đồng mà còn giúp sinh viên rèn luyện bản thân.',
         "Thông qua quá trình tham gia các hoạt động xã hội, nhiều bạn trẻ đã thay đổi nhận thức, biết quan tâm đến người khác, sống có trách nhiệm và có ý thức cống hiến cho xã hội. Điều này chứng tỏ rằng những phẩm chất tốt đẹp của con người không tự nhiên có sẵn mà được hình thành, phát triển thông qua các mối quan hệ và hoạt động thực tiễn trong xã hội.",
       ],
     },
@@ -360,8 +362,9 @@ const PRACTICAL_EVIDENCE = {
 
 // XI · Kết luận
 const CONCLUSION = {
-  kicker: "XI · Kết luận nhân văn",
-  headline: "Bản chất con người — tổng hòa của những gì ta đã sống, đã yêu, đã lao động.",
+  kicker: "IX · Kết luận nhân văn",
+  headline:
+    "Bản chất con người — tổng hòa của những gì ta đã sống, đã yêu, đã lao động.",
   lines: [
     ["Gia đình", "dạy chúng ta yêu thương."],
     ["Nhà trường", "dạy chúng ta tri thức."],
@@ -393,25 +396,33 @@ const ACTIVITIES = [
     n: "02",
     title: "Hoàn thiện mảnh ghép",
     desc: "Một hình người được ghép từ nhiều mảnh puzzle. Người xem ghép đủ các mảnh để tạo thành hình người hoàn chỉnh.",
-    questions: ["Gia đình", "Nhà trường", "Lao động", "Bạn bè", "Văn hóa", "Công nghệ"],
+    questions: [
+      "Gia đình",
+      "Nhà trường",
+      "Lao động",
+      "Bạn bè",
+      "Văn hóa",
+      "Công nghệ",
+    ],
   },
   {
     n: "03",
     title: "Thiếu một mảnh ghép",
     desc: "Người tham gia tháo một mảnh ghép bất kỳ. Khi đó hình người trở nên không hoàn chỉnh.",
-    message: '“Không có cá nhân nào được hình thành ngoài các mối quan hệ xã hội.”',
+    message:
+      "“Không có cá nhân nào được hình thành ngoài các mối quan hệ xã hội.”",
   },
 ];
 
 const NAV = [
-  ["hero",       "Mở đầu"],
-  ["history",    "Lịch sử"],
+  ["hero", "Mở đầu"],
+  ["history", "Lịch sử"],
   ["comparison", "So sánh"],
-  ["biosocial",  "Sinh học & XH"],
-  ["totality",   "Tổng hòa"],
-  ["pieces",     "Quan hệ XH"],
+  ["biosocial", "Sinh học & XH"],
+  ["totality", "Tổng hòa"],
+  ["pieces", "Quan hệ XH"],
   ["historical", "Tính lịch sử"],
-  ["practical",  "Dẫn chứng"],
+  ["practical", "Dẫn chứng"],
   ["conclusion", "Kết luận"],
 ];
 
