@@ -332,9 +332,10 @@ const PRACTICAL_EVIDENCE = {
       color: "#C26B36",
       title: "Chuyển đổi số và trí tuệ nhân tạo (AI) tại Việt Nam",
       paragraphs: [
-        "Trước hết, sự phát triển mạnh mẽ của công nghệ số và trí tuệ nhân tạo đang làm thay đổi sâu sắc môi trường học tập và làm việc của con người.",
-        "Sinh viên ngày nay không thể quyết định việc AI có xuất hiện hay không, bởi đó là xu thế khách quan của xã hội. Tuy nhiên, mỗi người có thể chủ động thích nghi bằng cách học tập các kỹ năng mới như kỹ năng số, ngoại ngữ, tư duy phản biện và khả năng sáng tạo.",
-        "Chính những mối quan hệ xã hội mới trong thời đại công nghệ đã góp phần hình thành nên mẫu con người hiện đại: năng động hơn, linh hoạt hơn và có tinh thần học tập suốt đời. Điều đó cho thấy con người không phát triển một cách tách biệt mà luôn chịu sự tác động của môi trường xã hội xung quanh.",
+        "Sự phát triển của trí tuệ nhân tạo đang làm thay đổi các quan hệ lao động và học tập.",
+        "Sinh viên ngày nay không thể lựa chọn việc AI xuất hiện hay không.",
+        "Nhưng họ có thể lựa chọn học kỹ năng số, ngoại ngữ, tư duy phản biện và khả năng sáng tạo để thích nghi với môi trường mới.",
+        "Chính những quan hệ xã hội mới trong thời đại số đang góp phần hình thành mẫu con người mới: năng động, linh hoạt và học tập suốt đời.",
       ],
     },
     {
@@ -342,9 +343,10 @@ const PRACTICAL_EVIDENCE = {
       color: "#6E7F4E",
       title: "Đại dịch COVID-19",
       paragraphs: [
-        "Một minh chứng rõ nét khác là đại dịch COVID-19.",
-        "Không ai mong muốn hay lựa chọn sự xuất hiện của đại dịch. Tuy nhiên, trong hoàn cảnh khó khăn đó, hàng triệu người Việt Nam đã cùng nhau tham gia các hoạt động hỗ trợ cộng đồng như quyên góp nhu yếu phẩm, hỗ trợ người nghèo, tham gia lực lượng tuyến đầu chống dịch và giúp đỡ những hoàn cảnh khó khăn.",
-        "Chính trong môi trường xã hội đặc biệt ấy, những phẩm chất tốt đẹp của con người Việt Nam như tinh thần đoàn kết, lòng nhân ái và trách nhiệm cộng đồng đã được thể hiện mạnh mẽ. Qua đó có thể thấy hoàn cảnh lịch sử và các quan hệ xã hội có ảnh hưởng sâu sắc đến sự hình thành và phát triển nhân cách con người.",
+        "Không ai lựa chọn được sự xuất hiện của đại dịch.",
+        "Tuy nhiên, trong giai đoạn khó khăn đó, hàng triệu người đã tham gia hỗ trợ cộng đồng, giúp đỡ người nghèo, quyên góp vật tư y tế và tham gia lực lượng chống dịch.",
+        "Những hoạt động xã hội ấy đã làm nổi bật tinh thần đoàn kết, nhân ái và trách nhiệm cộng đồng của con người Việt Nam.",
+        "Qua đó cho thấy môi trường xã hội và hoàn cảnh lịch sử có ảnh hưởng sâu sắc đến sự hình thành phẩm chất con người.",
       ],
     },
     {
@@ -352,9 +354,9 @@ const PRACTICAL_EVIDENCE = {
       color: "#4A7E7A",
       title: "Phong trào tình nguyện của sinh viên",
       paragraphs: [
-        "Bên cạnh đó, các phong trào tình nguyện cũng là một minh chứng sinh động.",
-        'Những chương trình như "Mùa hè xanh", "Tiếp sức mùa thi", hiến máu nhân đạo hay các hoạt động bảo vệ môi trường không chỉ mang lại lợi ích cho cộng đồng mà còn giúp sinh viên rèn luyện bản thân.',
-        "Thông qua quá trình tham gia các hoạt động xã hội, nhiều bạn trẻ đã thay đổi nhận thức, biết quan tâm đến người khác, sống có trách nhiệm và có ý thức cống hiến cho xã hội. Điều này chứng tỏ rằng những phẩm chất tốt đẹp của con người không tự nhiên có sẵn mà được hình thành, phát triển thông qua các mối quan hệ và hoạt động thực tiễn trong xã hội.",
+        'Các chương trình như "Mùa hè xanh", "Tiếp sức mùa thi", hiến máu nhân đạo hay hoạt động bảo vệ môi trường giúp sinh viên trưởng thành hơn.',
+        "Nhiều bạn trẻ sau khi tham gia các hoạt động này đã thay đổi cách sống, biết sẻ chia và có trách nhiệm hơn với xã hội.",
+        "Điều đó chứng minh rằng chính các quan hệ xã hội thực tiễn đã góp phần tạo nên những phẩm chất tốt đẹp của con người.",
       ],
     },
   ],
