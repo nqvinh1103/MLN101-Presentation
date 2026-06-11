@@ -318,112 +318,44 @@ const HISTORICAL_NATURE = {
     "Không có 'bản chất người' vĩnh cửu, bất biến. Mỗi thế hệ, mỗi xã hội tạo ra kiểu con người của chính mình.",
 };
 
-// VIII · Lao động và tha hóa
-const ALIENATION = {
-  kicker: "VIII · Lao động và tha hóa",
-  title: "Khi lao động không còn là của mình",
+// VIII · Dẫn chứng thực tiễn
+const PRACTICAL_EVIDENCE = {
+  kicker: "VIII · Dẫn chứng thực tiễn",
+  title: "Dẫn chứng thực tiễn",
   intro:
-    "Marx chỉ ra: lao động trong điều kiện xã hội tư bản có thể phản lại chính người lao động — đó là hiện tượng tha hóa (alienation).",
-  types: [
+    "Để chứng minh cho quan điểm của Karl Marx rằng \"Bản chất con người là tổng hòa các quan hệ xã hội\", chúng ta có thể nhìn vào nhiều hiện tượng thực tiễn trong đời sống hiện nay.",
+  items: [
     {
-      n: "01",
+      n: "1",
       color: "#C26B36",
-      title: "Tha hóa khỏi sản phẩm",
-      text: "Người công nhân tạo ra sản phẩm nhưng sản phẩm đó không thuộc về họ. Nó trở thành tài sản của người khác, thậm chí đối lập với chính người tạo ra nó.",
+      title: "Chuyển đổi số và trí tuệ nhân tạo (AI) tại Việt Nam",
+      paragraphs: [
+        "Trước hết, sự phát triển mạnh mẽ của công nghệ số và trí tuệ nhân tạo đang làm thay đổi sâu sắc môi trường học tập và làm việc của con người.",
+        "Sinh viên ngày nay không thể quyết định việc AI có xuất hiện hay không, bởi đó là xu thế khách quan của xã hội. Tuy nhiên, mỗi người có thể chủ động thích nghi bằng cách học tập các kỹ năng mới như kỹ năng số, ngoại ngữ, tư duy phản biện và khả năng sáng tạo.",
+        "Chính những mối quan hệ xã hội mới trong thời đại công nghệ đã góp phần hình thành nên mẫu con người hiện đại: năng động hơn, linh hoạt hơn và có tinh thần học tập suốt đời. Điều đó cho thấy con người không phát triển một cách tách biệt mà luôn chịu sự tác động của môi trường xã hội xung quanh.",
+      ],
     },
     {
-      n: "02",
-      color: "#A2511F",
-      title: "Tha hóa khỏi quá trình lao động",
-      text: "Lao động không còn là sự tự biểu hiện mà là sự khổ sai. Công nhân không lao động để phát triển bản thân mà chỉ để tồn tại, để kiếm tiền.",
-    },
-    {
-      n: "03",
+      n: "2",
       color: "#6E7F4E",
-      title: "Tha hóa khỏi bản chất loài",
-      text: "Lao động sáng tạo tự do là đặc trưng của con người, phân biệt với động vật. Khi lao động trở thành cưỡng bức, con người mất đi tính người của mình.",
+      title: "Đại dịch COVID-19",
+      paragraphs: [
+        "Một minh chứng rõ nét khác là đại dịch COVID-19.",
+        "Không ai mong muốn hay lựa chọn sự xuất hiện của đại dịch. Tuy nhiên, trong hoàn cảnh khó khăn đó, hàng triệu người Việt Nam đã cùng nhau tham gia các hoạt động hỗ trợ cộng đồng như quyên góp nhu yếu phẩm, hỗ trợ người nghèo, tham gia lực lượng tuyến đầu chống dịch và giúp đỡ những hoàn cảnh khó khăn.",
+        "Chính trong môi trường xã hội đặc biệt ấy, những phẩm chất tốt đẹp của con người Việt Nam như tinh thần đoàn kết, lòng nhân ái và trách nhiệm cộng đồng đã được thể hiện mạnh mẽ. Qua đó có thể thấy hoàn cảnh lịch sử và các quan hệ xã hội có ảnh hưởng sâu sắc đến sự hình thành và phát triển nhân cách con người.",
+      ],
     },
     {
-      n: "04",
+      n: "3",
       color: "#4A7E7A",
-      title: "Tha hóa khỏi người khác",
-      text: "Cạnh tranh và quan hệ thị trường biến mối quan hệ giữa người với người thành quan hệ giữa vật với vật — giữa hàng hóa với hàng hóa.",
+      title: "Phong trào tình nguyện của sinh viên",
+      paragraphs: [
+        "Bên cạnh đó, các phong trào tình nguyện cũng là một minh chứng sinh động.",
+        "Những chương trình như \"Mùa hè xanh\", \"Tiếp sức mùa thi\", hiến máu nhân đạo hay các hoạt động bảo vệ môi trường không chỉ mang lại lợi ích cho cộng đồng mà còn giúp sinh viên rèn luyện bản thân.",
+        "Thông qua quá trình tham gia các hoạt động xã hội, nhiều bạn trẻ đã thay đổi nhận thức, biết quan tâm đến người khác, sống có trách nhiệm và có ý thức cống hiến cho xã hội. Điều này chứng tỏ rằng những phẩm chất tốt đẹp của con người không tự nhiên có sẵn mà được hình thành, phát triển thông qua các mối quan hệ và hoạt động thực tiễn trong xã hội.",
+      ],
     },
   ],
-  today:
-    "Ngày nay: gig economy, lao động nền tảng số, thuật toán quản lý — những hình thức tha hóa mới trong thời đại 4.0 vẫn đang hiện hữu.",
-};
-
-// IX · Thời đại số
-const DIGITAL_AGE = {
-  kicker: "IX · Con người trong thời đại số",
-  title: "Quan hệ xã hội trong không gian kỹ thuật số",
-  intro:
-    "Mạng xã hội không chỉ là công cụ giao tiếp — nó là một hệ thống quan hệ xã hội mới, đang định hình lại bản chất con người thế hệ số.",
-  cards: [
-    {
-      title: "Thuật toán định hình thế giới quan",
-      color: "#4A7E7A",
-      text: "Filter bubble và echo chamber khiến mỗi người sống trong một 'thực tại' riêng biệt. Thuật toán chọn những gì ta thấy, dần dần định hình cách ta suy nghĩ về thế giới.",
-      stat: "Người dùng TikTok trung bình tiêu thụ 95 phút nội dung mỗi ngày",
-    },
-    {
-      title: "Dữ liệu là quan hệ xã hội mới",
-      color: "#6E7F4E",
-      text: "Mỗi lượt thích, mỗi tìm kiếm, mỗi vị trí GPS là dữ liệu mà các tập đoàn dùng để hiểu — và tác động — hành vi của chúng ta. Ta không dùng mạng xã hội miễn phí; ta trả bằng chính bản thân mình.",
-      stat: "Facebook lưu trữ hơn 52.000 điểm dữ liệu trên mỗi người dùng",
-    },
-    {
-      title: "Bản sắc số và tha hóa kỹ thuật số",
-      color: "#C26B36",
-      text: "Trên mạng xã hội, con người xây dựng một 'bản ngã trình diễn' khác với con người thực. Sự chênh lệch này tạo ra lo âu, trống rỗng — một dạng tha hóa trong không gian số.",
-      stat: "Hơn 40% người trẻ cảm thấy 'kém hơn' sau khi dùng mạng xã hội",
-    },
-  ],
-  quote:
-    "\"Trong thời đại số, các quan hệ xã hội không biến mất — chúng chỉ chuyển vào không gian mới với những quy luật mới và những nguy cơ tha hóa mới.\"",
-  bridge:
-    "Marx không thể dự đoán TikTok, nhưng luận điểm của ông vẫn đúng: môi trường xã hội ta tham gia hằng ngày sẽ định hình ta.",
-};
-
-// X · Ý nghĩa với Việt Nam
-const VIETNAM = {
-  kicker: "X · Ý nghĩa với Việt Nam",
-  title: "Xây dựng con người Việt Nam trong thời đại mới",
-  intro:
-    "Luận điểm của Marx không chỉ là triết học trừu tượng — nó có ý nghĩa thực tiễn rõ ràng cho việc xây dựng và phát triển con người Việt Nam hôm nay.",
-  pillars: [
-    {
-      n: "01",
-      color: "#C26B36",
-      title: "Đổi mới giáo dục",
-      text: "Giáo dục không chỉ là truyền kiến thức mà là xây dựng quan hệ xã hội lành mạnh: giữa thầy–trò, bạn–bè, nhà trường–cộng đồng. Môi trường giáo dục tốt sẽ tạo ra con người tốt.",
-      action: "Đầu tư vào môi trường học tập, không chỉ vào nội dung chương trình",
-    },
-    {
-      n: "02",
-      color: "#6E7F4E",
-      title: "Phát triển kinh tế toàn diện",
-      text: "Xóa đói giảm nghèo, tạo việc làm có chất lượng, bảo đảm quyền lao động — đây là điều kiện để con người tham gia vào các quan hệ kinh tế không tha hóa.",
-      action: "Đặt phẩm giá người lao động làm trung tâm của phát triển kinh tế",
-    },
-    {
-      n: "03",
-      color: "#4A7E7A",
-      title: "Bảo tồn và đổi mới văn hóa",
-      text: "Văn hóa Việt Nam là nền tảng bản sắc, nhưng cần mở cửa đón nhận cái mới. Giữ gốc văn hóa trong khi xây dựng quan hệ với thế giới là con đường phát triển bền vững.",
-      action: "Giữ giá trị cốt lõi: đoàn kết, hiếu học, nhân nghĩa — trong bối cảnh hội nhập",
-    },
-    {
-      n: "04",
-      color: "#CBA45A",
-      title: "Chủ động trong không gian số",
-      text: "Hướng dẫn người dân — đặc biệt thế hệ trẻ — xây dựng quan hệ lành mạnh trong không gian kỹ thuật số, tránh tha hóa số, bảo vệ bản sắc và sức khỏe tâm thần.",
-      action: "Giáo dục kỹ năng số và tư duy phản biện từ sớm",
-    },
-  ],
-  closing:
-    "Nhận thức đúng về bản chất con người là nền tảng để xây dựng những chính sách xã hội, giáo dục và phát triển phù hợp — đưa con người đến đúng vị trí trung tâm của sự phát triển.",
 };
 
 // XI · Kết luận
@@ -479,9 +411,7 @@ const NAV = [
   ["totality",   "Tổng hòa"],
   ["pieces",     "Quan hệ XH"],
   ["historical", "Tính lịch sử"],
-  ["alienation", "Tha hóa"],
-  ["digital",    "Thời đại số"],
-  ["vietnam",    "Việt Nam"],
+  ["practical",  "Dẫn chứng"],
   ["conclusion", "Kết luận"],
 ];
 
@@ -493,9 +423,7 @@ Object.assign(window, {
   TOTALITY,
   PIECES,
   HISTORICAL_NATURE,
-  ALIENATION,
-  DIGITAL_AGE,
-  VIETNAM,
+  PRACTICAL_EVIDENCE,
   CONCLUSION,
   ACTIVITIES,
   NAV,

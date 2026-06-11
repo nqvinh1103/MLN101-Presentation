@@ -526,148 +526,14 @@ function HistoricalNatureSection() {
 }
 
 // ─────────────────────────────────────────────
-// VIII · THA HÓA
+// VIII · DẪN CHỨNG THỰC TIỄN
 // ─────────────────────────────────────────────
-function AlienationSection() {
-  const d = window.ALIENATION;
+function PracticalEvidenceSection() {
+  const d = window.PRACTICAL_EVIDENCE;
   return (
     <section
-      id="alienation"
-      data-screen-label="Tha hóa"
-      className="bg-ink py-28 text-cream sm:py-36"
-    >
-      <div className="mx-auto max-w-5xl px-6 sm:px-10">
-        <Reveal variant="left">
-          <Kicker dark>{d.kicker}</Kicker>
-        </Reveal>
-        <Reveal variant="blur" duration={1}>
-          <h2 className="max-w-3xl font-serif text-3xl leading-tight sm:text-5xl">
-            {d.title}
-          </h2>
-        </Reveal>
-        <Reveal variant="up" delay={0.06}>
-          <p className="mt-6 max-w-2xl font-sans text-[1.05rem] leading-relaxed text-cream/65">
-            {d.intro}
-          </p>
-        </Reveal>
-
-        <Stagger className="mt-12 grid gap-5 sm:grid-cols-2" stagger={0.13}>
-          {d.types.map((t, i) => (
-            <Item key={t.n} variant={i % 2 === 0 ? "left" : "right"} duration={0.8}>
-              <div className="flex h-full flex-col rounded-sm border border-cream/10 bg-ink2 p-7 transition-colors hover:border-terra/35">
-                <div className="mb-5 flex items-center gap-3">
-                  <BigNumber className="text-4xl">
-                    <span style={{ color: t.color }}>{t.n}</span>
-                  </BigNumber>
-                  <div className="h-px flex-1" style={{ background: t.color + "35" }} />
-                </div>
-                <h3 className="font-serif text-lg leading-snug text-cream sm:text-xl">
-                  {t.title}
-                </h3>
-                <p className="mt-4 flex-1 font-sans text-[0.9rem] leading-relaxed text-cream/65">
-                  {t.text}
-                </p>
-              </div>
-            </Item>
-          ))}
-        </Stagger>
-
-        <Reveal variant="clip" duration={0.9} delay={0.05}>
-          <div className="mt-10 rounded-sm border-l-2 border-terra bg-ink2/80 px-6 py-5">
-            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-terra">
-              Tha hóa trong thời đại hiện nay
-            </p>
-            <p className="mt-3 font-serif text-base italic leading-relaxed text-cream/75 sm:text-lg">
-              {d.today}
-            </p>
-          </div>
-        </Reveal>
-      </div>
-    </section>
-  );
-}
-
-// ─────────────────────────────────────────────
-// IX · THỜI ĐẠI SỐ
-// ─────────────────────────────────────────────
-function DigitalAgeSection() {
-  const d = window.DIGITAL_AGE;
-  return (
-    <section
-      id="digital"
-      data-screen-label="Thời đại số"
-      className="bg-ink3 py-28 text-cream sm:py-36"
-    >
-      <div className="mx-auto max-w-5xl px-6 sm:px-10">
-        <Reveal variant="right">
-          <Kicker dark>{d.kicker}</Kicker>
-        </Reveal>
-        <Reveal variant="blur" duration={1}>
-          <h2 className="max-w-3xl font-serif text-3xl leading-tight sm:text-5xl">
-            {d.title}
-          </h2>
-        </Reveal>
-        <Reveal variant="up" delay={0.06}>
-          <p className="mt-6 max-w-2xl font-sans text-[1.05rem] leading-relaxed text-cream/65">
-            {d.intro}
-          </p>
-        </Reveal>
-
-        <Stagger className="mt-12 space-y-5" stagger={0.14}>
-          {d.cards.map((card, i) => (
-            <Item key={card.title} variant="up" duration={0.8}>
-              <div className="grid gap-6 rounded-sm border border-cream/10 bg-ink p-7 sm:grid-cols-[1fr_auto] sm:items-start sm:p-8">
-                <div>
-                  <h3
-                    className="font-serif text-xl sm:text-2xl"
-                    style={{ color: card.color }}
-                  >
-                    {card.title}
-                  </h3>
-                  <p className="mt-4 font-sans text-[1rem] leading-relaxed text-cream/70">
-                    {card.text}
-                  </p>
-                </div>
-                <div className="shrink-0">
-                  <span
-                    className="inline-block rounded-full px-4 py-2 font-mono text-[0.72rem] leading-relaxed"
-                    style={{ background: card.color + "22", color: card.color }}
-                  >
-                    {card.stat}
-                  </span>
-                </div>
-              </div>
-            </Item>
-          ))}
-        </Stagger>
-
-        <Reveal variant="clip" duration={1} delay={0.08}>
-          <figure className="my-14 border-l-2 border-terra pl-7 sm:pl-10">
-            <blockquote className="font-serif text-xl italic leading-snug text-cream/85 sm:text-2xl">
-              {d.quote}
-            </blockquote>
-          </figure>
-        </Reveal>
-
-        <Reveal variant="up" delay={0.05}>
-          <p className="mx-auto max-w-2xl text-center font-sans text-[1rem] leading-relaxed text-terra/80">
-            {d.bridge}
-          </p>
-        </Reveal>
-      </div>
-    </section>
-  );
-}
-
-// ─────────────────────────────────────────────
-// X · VIỆT NAM
-// ─────────────────────────────────────────────
-function VietnamSection() {
-  const d = window.VIETNAM;
-  return (
-    <section
-      id="vietnam"
-      data-screen-label="Việt Nam"
+      id="practical"
+      data-screen-label="Dẫn chứng thực tiễn"
       className="bg-cream py-28 text-ink sm:py-36"
     >
       <div className="mx-auto max-w-5xl px-6 sm:px-10">
@@ -685,43 +551,33 @@ function VietnamSection() {
           </p>
         </Reveal>
 
-        <Stagger className="mt-12 grid gap-5 sm:grid-cols-2" stagger={0.13}>
-          {d.pillars.map((pl, i) => (
-            <Item key={pl.n} variant={i % 2 === 0 ? "left" : "right"} duration={0.8}>
-              <div className="flex h-full flex-col rounded-sm border border-ink/10 bg-white/50 p-7 transition-colors hover:border-terra/40 hover:bg-white/80">
-                <div className="mb-5 flex items-center gap-3">
+        <Stagger className="mt-12 space-y-6" stagger={0.14}>
+          {d.items.map((item, i) => (
+            <Item key={item.n} variant="up" duration={0.8}>
+              <div className="rounded-sm border border-ink/10 bg-white/50 p-7 transition-colors hover:border-terra/40 hover:bg-white/80 sm:p-8">
+                <div className="mb-5 flex items-center gap-4">
                   <BigNumber className="text-4xl">
-                    <span style={{ color: pl.color }}>{pl.n}</span>
+                    <span style={{ color: item.color }}>{item.n}</span>
                   </BigNumber>
-                  <h3 className="font-serif text-lg leading-snug text-ink sm:text-xl">
-                    {pl.title}
-                  </h3>
+                  <div className="h-px flex-1" style={{ background: item.color + "35" }} />
                 </div>
-                <p className="flex-1 font-sans text-[0.9rem] leading-relaxed text-ink/70">
-                  {pl.text}
-                </p>
-                <div
-                  className="mt-6 flex items-start gap-2.5 rounded-sm px-4 py-3"
-                  style={{ background: pl.color + "14" }}
+                <h3
+                  className="font-serif text-xl leading-snug sm:text-2xl"
+                  style={{ color: item.color }}
                 >
-                  <span style={{ color: pl.color }} className="mt-0.5 text-xs">▸</span>
-                  <p
-                    className="font-mono text-[0.78rem] leading-relaxed"
-                    style={{ color: pl.color }}
-                  >
-                    {pl.action}
-                  </p>
+                  {item.title}
+                </h3>
+                <div className="mt-4 space-y-3">
+                  {item.paragraphs.map((para, j) => (
+                    <p key={j} className="font-sans text-[0.95rem] leading-relaxed text-ink/70">
+                      {para}
+                    </p>
+                  ))}
                 </div>
               </div>
             </Item>
           ))}
         </Stagger>
-
-        <Reveal variant="clip" duration={1} delay={0.1}>
-          <p className="mx-auto mt-14 max-w-2xl text-center font-serif text-xl italic leading-relaxed text-ink/70 sm:text-2xl">
-            {d.closing}
-          </p>
-        </Reveal>
       </div>
     </section>
   );
@@ -798,9 +654,7 @@ Object.assign(window, {
   TotalitySection,
   PiecesSection,
   HistoricalNatureSection,
-  AlienationSection,
-  DigitalAgeSection,
-  VietnamSection,
+  PracticalEvidenceSection,
   ConclusionSection,
   // giữ để tránh lỗi nếu còn tham chiếu cũ
   IntroSection: () => null,

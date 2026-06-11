@@ -109,9 +109,7 @@ function App() {
         <window.TotalitySection />
         <window.PiecesSection />
         <window.HistoricalNatureSection />
-        <window.AlienationSection />
-        <window.DigitalAgeSection />
-        <window.VietnamSection />
+        <window.PracticalEvidenceSection />
         <window.ConclusionSection />
       </main>
     </>
